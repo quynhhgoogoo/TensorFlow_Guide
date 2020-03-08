@@ -28,4 +28,10 @@ Layers = basic building blocks inside neural networks<br>
 - model.fit: fits model to training data
 - epoch: epoch = 1 when we fits the whole modek to training data at once
  <br>epoch = 10 when we divide the whole model into 10 portions and fit them inside training data 10 times<br>
-model.fit(train_images, train_labels, epoch=10)
+```model.fit(train_images, train_labels, epoch=10)```
+
+#### Make predictions
+- Attachs a softmax layer to convert logits to probabilities -> easier to interpret.
+- <b>logits</b>: vector of raw (non-normalized) predictions that a classification model generates.
+
+#### Verify predictions and use the train models
